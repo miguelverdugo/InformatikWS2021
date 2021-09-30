@@ -1,0 +1,14 @@
+1. calc2.sh
+
+2. Acceptors: checks if input is a given state and passes to next state depending on outcome (accepted or rejected)
+   Classifiers: subcategory of acceptors
+   Transducers: returns output based on the input. (e.g. traffic light: if green then switch to red )
+
+3. tl.sh
+
+4. compiled: entire programm is converted into machine code (compiled)
+   interpreted: executes instructions line by line
+
+5. protects access to python objects (multiple threads can't execute python
+   bytecodes at once), necessary since memory management isn't thread-safe.
+   hinders multithreading leading to perfromance bottlenecks.

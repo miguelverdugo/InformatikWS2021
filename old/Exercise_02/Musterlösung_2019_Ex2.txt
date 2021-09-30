@@ -1,0 +1,16 @@
+1. r: read, w: write, x: execute
+   chmod
+
+2. htop, top, kill
+
+3. ssh: secure shell
+   scp: secure copy
+   sftp: ssh file transfer protocol
+
+4. df -T
+
+5. > redirect
+   >> redirect and append
+   < can be used as an input from a given file
+
+6. connects commands in a chain. i.e. ls -l | grep -v "stuff" | less

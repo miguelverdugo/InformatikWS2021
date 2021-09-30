@@ -1,0 +1,16 @@
+1. manuals
+
+2. multiple directory entries for a single file
+   hard: point to single inode (specific location), permission updates for both link and original data, synchronizes changes, same inode number
+   soft: points towards a hardlink (symbolic path) => can work across filesystems
+
+3. find -name "[stuff]" -print | xargs file
+
+4. can be set via alias and set. alias can be used as shortcuts for complex
+   commands and environmental variables are used to configure your system and
+   certain programms
+
+5. bashrc contains configuration for terminal. contains env. variables and
+   aliases, etc
+
+6. takes two values from the cmdline, waits, adds them and displays the result 
