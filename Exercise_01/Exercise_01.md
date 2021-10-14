@@ -1,5 +1,5 @@
 
-# Informatics for Astronomers - WS2019
+# Informatics for Astronomers - WS2021
 
 **Roland Ottensamer, Marina Dütsch, Miguel Verdugo, Andreas Schanz**
 
