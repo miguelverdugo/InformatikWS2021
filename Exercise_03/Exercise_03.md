@@ -2,7 +2,7 @@
 
 **Roland Ottensamer, Marina Dütsch, Miguel Verdugo, Andreas Schanz**
 
-# Exercise sheet 3 - Python basics and Data types
+# Exercise sheet 3 - Python functions and numpy
 
 ---
 
@@ -16,55 +16,35 @@
 
 ---
 
-1. The function ``sys.getsizeof(object)`` returns the size (in bytes) of a ``python`` object in memory.
-   According to that function, How much memory a _float_ uses **in** ``python``?
-
-    Please explain the difference with respect to the the system requirements for a _float_.
-
-2. Write a Python script that takes a string as a command-line argument, reverses the order of the letters,
-   calculates its entropy and print it on the screen.
-
-3. Write a simple python script that takes a distance in lightyears and returns
-   that distance in both parsec and kilometers.
-
-     In the case of parsec, the script
+1. Write a simple python script that takes a distance in lightyears and returns
+   that distance in both parsec and kilometers. In the case of parsec, the script
    should return the proper SI notation (e.g. Gpc, Mpc, kpc depending on the distance).
-   The distance in kilometers shall be written in proper scientific notation.
+   The distance in kilometers shall be written in proper scientific notation. Make use of
+   functions in each case
 
-4.   Assume that these two lists are 3D coordinates (vectors):
+2. Write a Python function that calculates the entropy of a string. That function
+   should be placed within a script that reads the input from the command-line.
+
+3. The following snippet creates a list of 100 random numbers between 0 and 100.
 
     ```python
-       point_1 = [2.8, -4.7, 0.4]
-       point_2 = [-8.1, 3.0, -10.6]
+
+       import random
+
+       random_list = [random.choices(range(100))[0] for i in range(100)]
     ```
 
-      Write a script that computes the distance between those points
-      (by looping over the individual components)
+      write three functions that return 1) maximum value 2) the minimum  and 3)
+      which values are repeated and how many times each.
 
-5. ``numpy`` is likely the most important library in ``python`` and it is heavily used in
-     scientific analysis.
+4. Do the same but using the `numpy` library build-in functions, including the
+   creation of the array (that is, do not use the snippet above).
 
-       - How do ``numpy`` arrays differ from ``python`` lists?
-       - Show the creation of ``numpy`` arrays with different properties (e.g. converting from a ``list``, different step size and dimensions)
-       - Apply some mathematical functions to arrays and comment the differences with using ``lists``
+5. Create a 2D `numpy` array of $100 \times 100$ elements filled with zeros.
+   Replace inner of $50 \times 50$ elements with ones.
+   Calculate the mean and the median of this new array. Display it with `matplotlib`
 
-6.  ``Python`` provides a standard module (``timeit``)  for timing the execution of scripts and
-    pieces of code. Please time the execution of these two equivalents blocks
-
-    ````python
-    import numpy as np
-
-    N = 10**8
-    # Time from here
-    daten=[]
-    for i in range(0,N) :
-        daten.append(i**0.5)
-    # to here
-
-    # and from here
-    daten = np.sqrt(np.arange(0,N))
-    # to here
-    ````
-    - Which one is faster?
-    - For what values of ``N`` the effect is really noticeable. Please try a few wildly different
-    values to have an idea.
+6. Create a simple function that evaluates a `numpy` array (between `(0,10)` with
+   a spacing of `0.1`). That function should be able to take as parameter any (simple)
+   mathematical function available in the `numpy` library (e.g. `sqrt`, `sin`, `log`, etc).
+   Return and plot the resulting array with `matplotlib`.
