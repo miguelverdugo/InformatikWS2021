@@ -15,16 +15,18 @@
 > explain the possible context/motivation for the given exercise._
 
 ---
-1. Implement a simple calculator in `bash`. It should be able to perform all basic operations.
+1. Implement a simple calculator in `bash`.  After you start
+   the script, it should prompt the user to select from a list of mathematical operators and
+   store the selection in a variable (use the `read` command).
 
 2. Using a `bash` script, find the `N` largest files in your `$HOME` and copy them to another location. `N` is an argument (integer) provided by the user when running the script.
 
 3. Take the file `Photomety_V_Band.txt`. This file contains photometric and positional data of over 6000 stars. The first column contains the ID of the stars, the second and third contain the `X` and `Y` position and the fourth column contains the flux in ADU (Analog-Digital Units). Use `awk` to select all stars in a $500\times 500$px$^2$ around the center (1000, 1000) and write the result to a new file. Then sort the file based on the flux.
 
-4. Write a simple shell script that takes the `Photomety_V_Band.txt` and counts the number of stars inside of a 300px radius around the center (1000,1000). The script shall then print the resulting number and the ID and signal of the brightest star inside of that region.
+4. Write a  `bash` script that takes the `Photomety_V_Band.txt` and counts the number of stars inside of a 300px radius around the center (1000, 1000). The script shall then print the resulting number and the ID and signal of the brightest star inside of that region.
 
 5. Write a `Fortran` program that uses the Babylonian Method to calculate the approximate square root of 42 (or any number).
 
-6. Write a `Fortran` program that find all prime numbers equal or smaller than the input.
+6. Write a `Fortran` program that find all prime numbers up to the input value.
 
-    - Compare the execution time to your `python` approach
+    - Compare the execution time to your `python` version
