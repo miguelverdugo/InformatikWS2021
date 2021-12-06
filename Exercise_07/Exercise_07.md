@@ -2,7 +2,7 @@
 
 **Roland Ottensamer, Marina Dütsch, Miguel Verdugo, Andreas Schanz**
 
-# Exercise sheet 7 - Python classes
+# Exercise sheet 7 - Python classes and Web technologies
 
 ---
 
@@ -33,7 +33,7 @@
     - area
 
     Please implement them.
-    Save the the class in a `.py` file and import it from a `Jupyter notebook` and show how the class works by doing a few calculations.  
+    Save the the class in a `.py` file and import it from a `Jupyter notebook` and show how the class works by doing a few calculations.
 
 2. For the `class Circle` also implement the `__eq__()` and `__lt__()` methods so that:
 
@@ -52,7 +52,7 @@
 
     ````
 
-    (this exercise is evaluated independently from the previous one)    
+    (this exercise can be implemented independently from the previous example)
 
 3. During the _tutorium_, functions to calculate the distance between vectors and the dot ($\cdot$) and the cross ($\times$)
    products were implemented. Please transform these functions into class methods of a new class ``Vector`` so we can perform the following operations as:
@@ -81,26 +81,27 @@
 
      Opinions?
 
-5.  The Sloan Digital Sky Survey has produced catalogs of millions of
-       objects on the sky. These catalogs are stored in `SQL` databases and
-       are easily accessible through their webpages.
 
-       For example,
+5. Install in your computer the `python`-based blog engine [Pelican](https://docs.getpelican.com) in your computer and follow the instructions to create a first simple post. What do you think about it in comparison with plain html? 
+
+
+6. The Sloan Digital Sky Survey has produced catalogs of millions of objects on the sky. The catalogs are stored in `SQL` databases and are easily accessible through their webpages.
+
+    For example,
        <http://skyserver.sdss.org/dr15/en/tools/search/radial.aspx> allows
        to search of objects within a certain distance from the central
        position. In reality that web page execute a `SQL` command, which is
        also shown along the results of the query.
 
-       Using the `SQL` form
+    Using the `SQL` form
        <http://skyserver.sdss.org/dr15/en/tools/search/sql.aspx> is
        possible to execute arbitrary queries. Copy the previous command
        here and execute it again. Play a bit with the parameters.
 
-       -   What is the advantage of the "pure" `SQL` form in comparison
-           with the radial form used at the beginning?
+    - What is the advantage of the "pure" `SQL` form in comparison
+       with the radial form used at the beginning?
 
-       -   What do you think about the `SQL` syntax?
+    - What do you think about the `SQL` syntax?
 
-       -   Is possible to access `SQL` databases with `python`?
+    - Is possible to access `SQL` databases with `python`?
 
-6.
