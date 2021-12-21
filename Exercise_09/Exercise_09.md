@@ -19,7 +19,7 @@
    dot and cross products) and access them within a `python` session.
 
 2.  Please show the most common formats for docstrings (``numpydoc``, ``google`` and ``reST``) and
-    discuss their differences using a example (e.g. a dummy function).
+    discuss their differences using a example. That is, write the same doctring in the three formats.
 
 3. Testing is an important part in software development. Please discuss the differences between *unit testing*, *integration testing* and *compliance testing*.
 
@@ -38,8 +38,6 @@
    ````
    (a test suite can be executed with the following command: ``python -m pytest tests.py`` or simply ``pytest test_file.py``)
 
-
-
-5.
+5. Create a package containing the `class Vector`
 
 6.
