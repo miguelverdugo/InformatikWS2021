@@ -2,7 +2,7 @@
 
 **Roland Ottensamer, Marina Dütsch, Miguel Verdugo, Andreas Schanz**
 
-# Exercise sheet 8 -
+## Exercise sheet 8 - Testing, documentation and packaging
 
 ---
 
@@ -15,29 +15,32 @@
 > explain the possible context/motivation for the given exercise._
 
 ---
-1. Please write the docstrings for our class ``Vector`` and its implemented methods (distance,
-   dot and cross products) and access them within a `python` session.
 
-2.  Please show the most common formats for docstrings (``numpydoc``, ``google`` and ``reST``) and
-    discuss their differences using a example. That is, write the same doctring in the three formats.
+1. Testing is an important part in software development. Please discuss the differences between *unit testing*, *integration testing* and *compliance testing*.
 
-3. Testing is an important part in software development. Please discuss the differences between *unit testing*, *integration testing* and *compliance testing*.
+2. Write some simple tests for the class ``Vector``. That is, make sure that the methods are working as expected and returning the correct results
 
-4. Write some simple tests for the class ``Vector``. That is, make sure that the methods are working as expected.
+    ````python
+    class TestVector:
 
-   ````python
-   class TestVector:
+        def test_method1(self):
+             assert "condition"
 
-       def test_method1(self):
-            assert "condition"
-
-       def test_method2(self):
-            assert "another condition"        
+        def test_method2(self):
+             assert "another condition"        
 
        #etc
-   ````
+    ````
    (a test suite can be executed with the following command: ``python -m pytest tests.py`` or simply ``pytest test_file.py``)
 
-5. Create a package containing the `class Vector`
+3. Create a package from the ``Vector`` example. In order to do this, follow the guide found at
+     [https://packaging.python.org/tutorials/packaging-projects/](https://packaging.python.org/tutorials/packaging-projects/) and
+     upload it to the [PyPI testserver](https://test.pypi.org/). Then you should download/install it using `pip` and use it in a small script.
 
-6.
+4. Create a `README.md` (in markdown) file for the package `Vector`, where basic instructions how to use the package are included, like purpose, installation, requirements and examples. The example code for these examples should be embedded in the text and displayed with code highlighting. You can test the document with [https://jbt.github.io/markdown-editor/](https://jbt.github.io/markdown-editor/) for example.
+
+5. Please write the docstrings for our class ``Vector`` and its implemented methods (distance,
+   dot and cross products) and access them within a `python` session.
+
+6.  Please show the most common formats for docstrings (``numpydoc``, ``google`` and ``reST``) and
+    discuss their differences using a example. That is, write the same docstrings in the three formats.
